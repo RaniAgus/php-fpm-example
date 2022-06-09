@@ -1,9 +1,1 @@
-<?php
-
-// phpinfo();
-
-echo '<pre>';
-print_r($_SERVER);
-echo '</pre>';
-
-?>
+<a href="/mailer.php">Probar Swift mailer</a>

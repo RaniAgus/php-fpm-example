@@ -6,6 +6,11 @@ services:
       context: ./
       dockerfile: Dockerfile
     container_name: php-app
+    environment:
+      - GMAIL_USER=${GMAIL_USER:?}
+      - GMAIL_USERNAME=${GMAIL_USERNAME:?}
+      - GMAIL_PASSWORD=${GMAIL_PASSWORD:?}
+      - TO=${TO:?}
     restart: always
     volumes:
       - .:/var/www
