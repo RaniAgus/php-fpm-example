@@ -19,6 +19,7 @@ function enviar_mail($to, $mensaje, $subject) {
 
   try {
     $result = $mailer->send($message);
+    echo htmlspecialchars_decode($mensaje);
   }
   catch (Exception $e)
   {
