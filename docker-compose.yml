@@ -11,6 +11,7 @@ services:
       - GMAIL_USERNAME=${GMAIL_USERNAME:?}
       - GMAIL_PASSWORD=${GMAIL_PASSWORD:?}
       - TO=${TO:?}
+      - FILE_URI=${FILE_URI:?}
     restart: always
     volumes:
       - .:/var/www

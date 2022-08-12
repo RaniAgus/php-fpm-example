@@ -4,4 +4,7 @@ FROM php:7.0.33-fpm
 RUN sed -i -e "s#;date.timezone =#date.timezone = America/Argentina/Buenos_Aires#g" /usr/local/etc/php/php.ini-development
 RUN sed -i -e "s#;date.timezone =#date.timezone = America/Argentina/Buenos_Aires#g" /usr/local/etc/php/php.ini-production
 
+RUN mkdir /assets
+RUN chown -R www-data:www-data /assets
+
 WORKDIR /var/www

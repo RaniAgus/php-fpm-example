@@ -1,5 +1,5 @@
 # php-fpm-example
 
 ```
-docker-compose up
+docker compose up
 ```
